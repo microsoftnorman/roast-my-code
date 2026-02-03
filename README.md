@@ -33,12 +33,14 @@ This project uses **[Simply Spec](https://github.com/microsoftnorman/simply-spec
 
 ### Install Simply Spec
 
-```bash
-# Clone the simply-spec repository
-git clone https://github.com/microsoftnorman/simply-spec.git
+**Option 1: One-liner (PowerShell)**
+```powershell
+irm https://raw.githubusercontent.com/microsoftnorman/simply-spec/main/install.ps1 | iex
+```
 
-# Or just copy the template files into your project
-# The specs live in docs/specs/ and plans in docs/plans/
+**Option 2: One-liner (Bash/Zsh)**
+```bash
+curl -fsSL https://raw.githubusercontent.com/microsoftnorman/simply-spec/main/install.sh | bash
 ```
 
 ### How This Project Was Built

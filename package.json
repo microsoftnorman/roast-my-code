@@ -1,0 +1,115 @@
+{
+  "name": "roast-my-code",
+  "displayName": "Roast My Code",
+  "description": "Get your code humorously roasted by AI (1-11 intensity)",
+  "version": "0.0.1",
+  "publisher": "roast-my-code",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Chat"
+  ],
+  "keywords": [
+    "copilot",
+    "chat",
+    "roast",
+    "code review",
+    "humor"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "chatParticipants": [
+      {
+        "id": "roast-my-code.roast",
+        "name": "roast",
+        "fullName": "Roast My Code",
+        "description": "Get your code humorously roasted (1-11 intensity)",
+        "isSticky": true,
+        "commands": [
+          {
+            "name": "level",
+            "description": "Set roast intensity (1-11). Example: /level 7"
+          },
+          {
+            "name": "workspace",
+            "description": "Roast the entire workspace (structure, deps, config)"
+          },
+          {
+            "name": "gordon",
+            "description": "Gordon Ramsay-style kitchen nightmares roasting"
+          },
+          {
+            "name": "shakespeare",
+            "description": "Roast in dramatic Shakespearean style"
+          },
+          {
+            "name": "haiku",
+            "description": "Deliver the roast as a haiku"
+          },
+          {
+            "name": "explain",
+            "description": "Serious mode - explain what's actually wrong"
+          }
+        ],
+        "disambiguation": [
+          {
+            "category": "code_roast",
+            "description": "The user wants humorous, funny feedback or criticism about their code",
+            "examples": [
+              "Roast my code",
+              "Make fun of this function",
+              "Give me funny feedback on this",
+              "What's wrong with this code but make it funny",
+              "Critique this like Gordon Ramsay",
+              "Roast my project",
+              "Roast this workspace"
+            ]
+          }
+        ]
+      }
+    ],
+    "commands": [
+      {
+        "command": "roast-my-code.openRoast",
+        "title": "Roast My Code: Open Roast Chat",
+        "icon": "$(flame)"
+      },
+      {
+        "command": "roast-my-code.roastSelection",
+        "title": "🔥 Roast This Code",
+        "icon": "$(flame)"
+      },
+      {
+        "command": "roast-my-code.selectLevel",
+        "title": "Roast My Code: Select Roast Level"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "roast-my-code.roastSelection",
+          "when": "editorHasSelection",
+          "group": "1_modification@100"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.96.0",
+    "@typescript-eslint/eslint-plugin": "^8.18.0",
+    "@typescript-eslint/parser": "^8.18.0",
+    "eslint": "^9.16.0",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.54.0"
+  }
+}

@@ -125,9 +125,9 @@ export function createRoastParticipant(_context: vscode.ExtensionContext): vscod
       }
       
       followups.push({
-        prompt: 'Roast this code!',
-        command: 'gordon',
-        label: '👨‍🍳 Gordon Ramsay style'
+        prompt: 'Question everything about this code!',
+        command: 'socrates',
+        label: '🏛️ Socratic questioning'
       });
       
       return followups;

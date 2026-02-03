@@ -37,8 +37,12 @@
             "description": "Roast the entire workspace (structure, deps, config)"
           },
           {
-            "name": "gordon",
-            "description": "Gordon Ramsay-style kitchen nightmares roasting"
+            "name": "socrates",
+            "description": "Socratic method - roast through endless philosophical questions"
+          },
+          {
+            "name": "wilde",
+            "description": "Oscar Wilde-style devastating wit and epigrams"
           },
           {
             "name": "shakespeare",
@@ -62,7 +66,7 @@
               "Make fun of this function",
               "Give me funny feedback on this",
               "What's wrong with this code but make it funny",
-              "Critique this like Gordon Ramsay",
+              "Question my code like Socrates",
               "Roast my project",
               "Roast this workspace"
             ]

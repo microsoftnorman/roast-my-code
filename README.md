@@ -77,7 +77,8 @@ Check out the [`docs/`](docs/) folder to see the actual specs and plans used to 
 ### 🎭 Special Roast Styles
 
 - `/workspace` - Roast the entire workspace (structure, deps, config)
-- `/gordon` - Gordon Ramsay-style kitchen nightmares roasting
+- `/socrates` - Socratic method - endless philosophical questioning
+- `/wilde` - Oscar Wilde-style devastating wit and epigrams
 - `/shakespeare` - Dramatic Shakespearean critique
 - `/haiku` - Roasts delivered as haikus
 - `/explain` - Serious mode with actual fixes
@@ -124,8 +125,11 @@ Use `@roast /workspace` to explicitly roast the whole project.
 **Workspace Roast:**
 > "Your package.json has 127 dependencies. At this point, just `npm install internet`."
 
-**Gordon Ramsay Style:**
-> "THIS CODE IS RAW! RAAAAW! Where's the error handling?! IT'S MISSING!"
+**Socratic Style:**
+> "But tell me, what IS a variable? And if this variable is named `x`, does it truly capture its essence? And these seven nested loops—have you considered WHY seven?"
+
+**Oscar Wilde Style:**
+> "I have nothing to declare except my disappointment in this function. To use one global variable may be regarded as a misfortune; to use twelve looks like carelessness."
 
 **Shakespeare Style:**
 > "What light through yonder IDE breaks? 'Tis not clean code, but chaos makes!"
@@ -140,7 +144,8 @@ Use `@roast /workspace` to explicitly roast the whole project.
 | `@roast` | Roast selection, file, or workspace (in that priority) |
 | `@roast /level N` | Set roast intensity (1-11) |
 | `@roast /workspace` | Roast the entire project |
-| `@roast /gordon` | Gordon Ramsay-style roasting |
+| `@roast /socrates` | Socratic philosophical questioning |
+| `@roast /wilde` | Oscar Wilde-style wit |
 | `@roast /shakespeare` | Shakespearean dramatic roast |
 | `@roast /haiku` | Roast as haikus |
 | `@roast /explain` | Serious mode - explain what's wrong |
@@ -168,7 +173,7 @@ Use `@roast /workspace` to explicitly roast the whole project.
 Initial release with:
 - 11 roast levels (1-11, because these go to eleven)
 - Workspace roasting (when no file is open)
-- 5 special styles (workspace, gordon, shakespeare, haiku, explain)
+- 6 special styles (workspace, socrates, wilde, shakespeare, haiku, explain)
 - Context menu integration ("🔥 Roast This Code")
 - Status bar level indicator
 - Follow-up suggestions after roasts

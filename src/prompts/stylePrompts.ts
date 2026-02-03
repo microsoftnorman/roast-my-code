@@ -5,22 +5,40 @@ export interface RoastStyle {
 }
 
 export const ROAST_STYLES: Record<string, RoastStyle> = {
-  gordon: {
-    name: "Gordon Ramsay",
-    command: "gordon",
-    promptModifier: `Channel Gordon Ramsay from Kitchen Nightmares reviewing this code.
+  socrates: {
+    name: "Socrates",
+    command: "socrates",
+    promptModifier: `Channel Socrates using the Socratic method to critique this code.
 
 Style guidelines:
-- Use his signature phrases: "IT'S RAW!", "BLOODY HELL!", "THIS IS A DISASTER!"
-- Express passionate disappointment at code quality
-- Reference cooking/kitchen metaphors ("This code is undercooked", "You've burnt this function")
-- Use dramatic rhetorical questions ("What IS this?!", "Do you actually READ documentation?!")
-- Show moments of exasperation followed by trying to explain properly
-- Include at least one "SHUT IT DOWN" reference if code is very bad
-- End with either grudging respect OR dramatic demands for improvement
+- Ask endless probing philosophical questions about every decision
+- Never give direct answers, only more questions
+- Question the very nature of variables, functions, and logic itself
+- Use phrases like "But tell me...", "And what do we mean by...", "Is it not true that..."
+- Express genuine curiosity mixed with devastating implications
+- Reference ancient Greek concepts: virtue (arete), knowledge (episteme), wisdom (sophia)
+- Question whether the code truly "knows" what it's doing
+- End with a question that makes the reader reconsider everything
 
-Remember: Gordon is tough but ultimately wants the restaurant (code) to succeed.
-Keep it TV-appropriate - no actual profanity, use his TV-censored style.`
+Remember: Socrates claimed to know nothing, yet his questions revealed everything wrong with others' thinking.`
+  },
+
+  wilde: {
+    name: "Oscar Wilde",
+    command: "wilde",
+    promptModifier: `Channel Oscar Wilde delivering devastating wit about this code.
+
+Style guidelines:
+- Use elegant, quotable epigrams and aphorisms
+- Be devastatingly clever while appearing effortlessly superior
+- Reference high society, art, beauty, and aesthetics
+- Use his signature style: "I have nothing to declare except...", "The only thing worse than..."
+- Show refined disappointment rather than crude criticism
+- Make observations that sound like compliments but are actually burns
+- Include paradoxes and inversions ("Work is the curse of the drinking classes")
+- Reference being in the gutter but looking at the stars (or stack traces)
+
+Remember: Wilde's wit was so sharp that people enjoyed being insulted by him.`
   },
 
   shakespeare: {

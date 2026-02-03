@@ -2,6 +2,58 @@
 
 Get your code humorously roasted by AI! A VS Code extension that delivers workplace-appropriate, constructive code critiques with adjustable intensity levels from 1-11.
 
+---
+
+## 📚 Spec-Driven Development Example
+
+**This project demonstrates spec-driven development in action.** Rather than writing code first, we started with a comprehensive specification, then generated an implementation plan, and finally implemented the code—all guided by AI.
+
+### What is Spec-Driven Development?
+
+Spec-driven development is an approach where you write detailed specifications *before* writing code. The spec acts as a contract between the idea and the implementation, ensuring:
+
+- **Clarity of intent** - Forces you to think through requirements before coding
+- **AI-friendly context** - Provides rich context for AI coding assistants to work with
+- **Traceable decisions** - Documents why things were built a certain way
+- **Reduced rework** - Catches issues in the design phase, not production
+
+### Frameworks and Tools
+
+There are multiple frameworks for spec-driven development:
+
+| Approach | Description |
+|----------|-------------|
+| **Simply Spec** | Lightweight markdown-based specs for AI-assisted development |
+| **OpenAPI/Swagger** | API-first design for REST services |
+| **TDD/BDD** | Test-first development with executable specifications |
+| **Design Docs** | Traditional software design documents |
+| **ADRs** | Architecture Decision Records for capturing choices |
+
+This project uses **[Simply Spec](https://github.com/microsoftnorman/simply-spec)** - a simple, flexible approach optimized for AI coding agents like GitHub Copilot.
+
+### Install Simply Spec
+
+```bash
+# Clone the simply-spec repository
+git clone https://github.com/microsoftnorman/simply-spec.git
+
+# Or just copy the template files into your project
+# The specs live in docs/specs/ and plans in docs/plans/
+```
+
+### How This Project Was Built
+
+1. **Spec** → Wrote `docs/specs/roast-my-code.md` with all features, levels, and behaviors
+2. **Plan** → Generated `docs/plans/roast-my-code/implementation-plan.md` from the spec
+3. **Implement** → AI implemented each phase following the plan
+4. **Iterate** → Updated spec → regenerated plan → implemented new features
+
+Check out the [`docs/`](docs/) folder to see the actual specs and plans used to build this extension.
+
+> 💡 **Want to try it?** Fork this repo, modify the spec, and let AI regenerate the implementation!
+
+---
+
 ## Features
 
 ### 🎚️ Adjustable Roast Levels (1-11)

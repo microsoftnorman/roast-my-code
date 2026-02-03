@@ -75,7 +75,8 @@ Code reviews can be dry, boring, and sometimes demotivating. Developers often ne
 | `/roast` | Roast the current selection or file (default) |
 | `/level` | Set roast intensity (1-11) |
 | `/workspace` | Roast the entire workspace (project structure, deps, config) |
-| `/gordon` | Gordon Ramsay-style kitchen nightmares roasting |
+| `/socrates` | Socratic method - roast through endless philosophical questions |
+| `/wilde` | Oscar Wilde-style devastating wit and epigrams |
 | `/shakespeare` | Roast in Shakespearean dramatic style |
 | `/haiku` | Deliver the roast as a haiku |
 | `/explain` | Explain what's actually wrong (serious mode) |
@@ -103,7 +104,7 @@ When no code context is available, the extension analyzes and roasts:
 
 2. **As a developer**, I want to crank the roast level to 11 so I can share hilarious feedback with my team.
 
-3. **As a developer**, I want to use `/gordon` command so I can get Gordon Ramsay-style criticism of my code.
+3. **As a developer**, I want to use `/socrates` command so I can get my code questioned by ancient philosophical methods.
 
 4. **As a developer**, I want follow-up options to see actual fixes after being roasted.
 
@@ -231,8 +232,12 @@ Here is the code to roast:
             "description": "Set roast intensity (1-11). Example: /level 7"
           },
           {
-            "name": "gordon",
-            "description": "Gordon Ramsay-style kitchen nightmares roasting"
+            "name": "socrates",
+            "description": "Socratic method - roast through endless philosophical questions"
+          },
+          {
+            "name": "wilde",
+            "description": "Oscar Wilde-style devastating wit and epigrams"
           },
           {
             "name": "shakespeare",
@@ -256,7 +261,7 @@ Here is the code to roast:
               "Make fun of this function",
               "Give me funny feedback on this",
               "What's wrong with this code but make it funny",
-              "Critique this like Gordon Ramsay"
+              "Question my code like Socrates"
             ]
           }
         ]
@@ -340,7 +345,7 @@ interface RoastResult extends vscode.ChatResult {
 
 - [ ] Chat participant `@roast` is registered and invocable
 - [ ] Roast levels 1-11 produce noticeably different intensity responses
-- [ ] All slash commands (`/level`, `/workspace`, `/gordon`, `/shakespeare`, `/haiku`, `/explain`) work
+- [ ] All slash commands (`/level`, `/workspace`, `/socrates`, `/wilde`, `/shakespeare`, `/haiku`, `/explain`) work
 - [ ] Workspace roasting works when no file/selection is available
 - [ ] Responses are genuinely funny (subjective, validated via user testing)
 - [ ] All responses are workplace-appropriate (validated via extensive testing)
@@ -393,10 +398,13 @@ interface RoastResult extends vscode.ChatResult {
 > "This function is doing so many things, it should file for multiple personality disorder. Single Responsibility called—it's filing a restraining order."
 
 ### Level 11 (These Go to Eleven)
-> "I've seen spaghetti code before, but this? This is a full Italian restaurant. There's lasagna in here. I found a calzone hiding in line 47. Gordon Ramsay called and even HE is speechless. This code doesn't just have technical debt—it's declared bankruptcy in three countries."
+> "I've seen spaghetti code before, but this? This is a full Italian restaurant. There's lasagna in here. I found a calzone hiding in line 47. This code doesn't just have technical debt—it's declared bankruptcy in three countries. Socrates would question his entire existence. Oscar Wilde would be speechless, and that man was NEVER speechless."
 
-### Gordon Ramsay Style (`/gordon`)
-> "THIS CODE IS RAW! RAAAAW! You call this a function?! My nan could write better code and she's been dead for 15 years! Where's the error handling?! IT'S MISSING! Just like your will to read documentation apparently!"
+### Socratic Style (`/socrates`)
+> "But tell me, dear developer, what IS a variable? And if this variable is named `x`, does it truly capture the essence of what it represents? And when you say this function 'works', what do we mean by 'works'? Is functionality merely the absence of errors, or something more profound? And these seven nested loops—have you considered WHY seven? Would Pythagoras approve?"
+
+### Oscar Wilde Style (`/wilde`)
+> "I have nothing to declare except my disappointment in this function. To use one global variable may be regarded as a misfortune; to use twelve looks like carelessness. We are all in the gutter, but some of us are looking at the stack traces."
 
 ### Shakespeare Style (`/shakespeare`)
 > "What light through yonder IDE breaks? 'Tis not clean code, but chaos makes! O variable, variable, wherefore art thou named `temp2`? A name by any other convention would smell less of desperation."
